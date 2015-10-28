@@ -1,0 +1,17 @@
+{
+    "contents" : "require(\"jsonlite\")\nrequire(\"RCurl\")\ndf <- data.frame(fromJSON(getURL(URLencode('129.152.144.84:5001/rest/native/?query=\"select * from StarData10k\"'),httpheader=c(DB='jdbc:oracle:thin:@129.152.144.84:1521/PDBF15DV.usuniversi01134.oraclecloud.internal', USER='cs329e_apb766', PASS='orcl_apb766', MODE='native_mode', MODEL='model', returnDimensions = 'False', returnFor = 'JSON'), verbose = TRUE), ))\nsummary(df)\nhead(df)\n",
+    "created" : 1446000340225.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "212032486",
+    "id" : "9B4F394",
+    "lastKnownWriteTime" : 1443669052,
+    "path" : "~/DataVisualization/DV_RProject2/01 Data/Database Creation Code.R",
+    "project_path" : null,
+    "properties" : {
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "type" : "r_source"
+}
