@@ -1,0 +1,18 @@
+{
+    "contents" : "#CrosstabWorkflow\nrequire(tidyr)\nrequire(dplyr)\nlibrary(lubridate)\nsetwd(\"~/DataVisualization/DV_TProject1/01 Data\")\n\nfile_path <- \"StormEvents_details-ftp_v1.0_d2015_c2015102110k.reformatted2.csv\"\n\ndf <- read.csv(file_path, stringsAsFactors = FALSE)\n\nhead(select(df, BEGIN_TIME))\n",
+    "created" : 1446126630525.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3024238104",
+    "id" : "22716609",
+    "lastKnownWriteTime" : 1446149329,
+    "path" : "~/DataVisualization/DV_TProject1/01 Data/WorkflowA.R",
+    "project_path" : "01 Data/WorkflowA.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "type" : "r_source"
+}

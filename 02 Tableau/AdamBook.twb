@@ -1,0 +1,1448 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 9100.15.0828.1711                                -->
+<workbook source-platform='win' version='9.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource hasconnection='false' inline='true' name='Parameters' version='9.1'>
+      <aliases enabled='yes' />
+      <column caption='Hi' datatype='real' name='[DamageKPI Parameter 2]' param-domain-type='range' role='measure' type='quantitative' value='10000.0'>
+        <calculation class='tableau' formula='10000.0' />
+        <range max='13800.000000005492' min='10000.0' />
+      </column>
+      <column caption='Medium' datatype='real' name='[DamageKPI Parameter 3]' param-domain-type='range' role='measure' type='quantitative' value='5000.0'>
+        <calculation class='tableau' formula='5000.0' />
+        <range max='10000.0' min='5000.0' />
+      </column>
+      <column caption='Lower' datatype='real' name='[DamageKPI Parameter 4]' param-domain-type='range' role='measure' type='quantitative' value='500.0'>
+        <calculation class='tableau' formula='500.0' />
+        <range max='1000.0' min='500.0' />
+      </column>
+      <column caption='Low' datatype='real' name='[DamageKPI Parameter]' param-domain-type='range' role='measure' type='quantitative' value='500.0'>
+        <calculation class='tableau' formula='500.0' />
+        <range max='10000.0' min='500.0' />
+      </column>
+    </datasource>
+    <datasource caption='StormEvents_details-ftp_v1.0_d2015_c2015102110k.reformatted.reformatted2' inline='true' name='textscan.42306.615652442131' version='9.1'>
+      <connection class='textscan' directory='C:/Users/Adam Barrett/Documents/DataVisualization/DV_TProject1/01 Data' filename='StormEvents_details-ftp_v1.0_d2015_c2015102110k.reformatted.reformatted2.csv' password='' server='' username=''>
+        <relation name='StormEvents_details-ftp_v1.0_d2015_c2015102110k.reformatted.reformatted2#csv' table='[StormEvents_details-ftp_v1.0_d2015_c2015102110k.reformatted.reformatted2#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='BEGIN_YEARMONTH' ordinal='0' />
+            <column datatype='integer' name='BEGIN_DAY' ordinal='1' />
+            <column datatype='real' name='BEGIN_TIME' ordinal='2' />
+            <column datatype='integer' name='END_YEARMONTH' ordinal='3' />
+            <column datatype='integer' name='END_DAY' ordinal='4' />
+            <column datatype='real' name='END_TIME' ordinal='5' />
+            <column datatype='integer' name='EPISODE_ID' ordinal='6' />
+            <column datatype='integer' name='EVENT_ID' ordinal='7' />
+            <column datatype='string' name='STATE' ordinal='8' />
+            <column datatype='integer' name='STATE_FIPS' ordinal='9' />
+            <column datatype='integer' name='YEAR' ordinal='10' />
+            <column datatype='string' name='MONTH_NAME' ordinal='11' />
+            <column datatype='string' name='EVENT_TYPE' ordinal='12' />
+            <column datatype='string' name='CZ_TYPE' ordinal='13' />
+            <column datatype='integer' name='CZ_FIPS' ordinal='14' />
+            <column datatype='string' name='CZ_NAME' ordinal='15' />
+            <column datatype='string' name='WFO' ordinal='16' />
+            <column datatype='string' name='BEGIN_DATE_TIME' ordinal='17' />
+            <column datatype='string' name='CZ_TIMEZONE' ordinal='18' />
+            <column datatype='string' name='END_DATE_TIME' ordinal='19' />
+            <column datatype='integer' name='INJURIES_DIRECT' ordinal='20' />
+            <column datatype='integer' name='INJURIES_INDIRECT' ordinal='21' />
+            <column datatype='integer' name='DEATHS_DIRECT' ordinal='22' />
+            <column datatype='integer' name='DEATHS_INDIRECT' ordinal='23' />
+            <column datatype='real' name='DAMAGE_PROPERTY' ordinal='24' />
+            <column datatype='integer' name='DAMAGE_CROPS' ordinal='25' />
+            <column datatype='string' name='SOURCE' ordinal='26' />
+            <column datatype='real' name='MAGNITUDE' ordinal='27' />
+            <column datatype='string' name='MAGNITUDE_TYPE' ordinal='28' />
+            <column datatype='string' name='FLOOD_CAUSE' ordinal='29' />
+            <column datatype='string' name='CATEGORY' ordinal='30' />
+            <column datatype='string' name='TOR_F_SCALE' ordinal='31' />
+            <column datatype='real' name='TOR_LENGTH' ordinal='32' />
+            <column datatype='integer' name='TOR_WIDTH' ordinal='33' />
+            <column datatype='string' name='TOR_OTHER_WFO' ordinal='34' />
+            <column datatype='string' name='TOR_OTHER_CZ_STATE' ordinal='35' />
+            <column datatype='integer' name='TOR_OTHER_CZ_FIPS' ordinal='36' />
+            <column datatype='string' name='TOR_OTHER_CZ_NAME' ordinal='37' />
+            <column datatype='integer' name='BEGIN_RANGE' ordinal='38' />
+            <column datatype='string' name='BEGIN_AZIMUTH' ordinal='39' />
+            <column datatype='string' name='BEGIN_LOCATION' ordinal='40' />
+            <column datatype='integer' name='END_RANGE' ordinal='41' />
+            <column datatype='string' name='END_AZIMUTH' ordinal='42' />
+            <column datatype='string' name='END_LOCATION' ordinal='43' />
+            <column datatype='real' name='BEGIN_LAT' ordinal='44' />
+            <column datatype='real' name='BEGIN_LON' ordinal='45' />
+            <column datatype='real' name='END_LAT' ordinal='46' />
+            <column datatype='real' name='END_LON' ordinal='47' />
+            <column datatype='string' name='EPISODE_NARRATIVE' ordinal='48' />
+            <column datatype='string' name='EVENT_NARRATIVE' ordinal='49' />
+            <column datatype='string' name='DATA_SOURCE' ordinal='50' />
+            <column datatype='real' name='BEGIN_MIN' ordinal='51' />
+            <column datatype='integer' name='BEGIN_HOUR' ordinal='52' />
+            <column datatype='real' name='END_MIN' ordinal='53' />
+            <column datatype='integer' name='END_HOUR' ordinal='54' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>BEGIN_YEARMONTH</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[BEGIN_YEARMONTH]</local-name>
+            <parent-name>[StormEvents_details-ftp_v1.0_d2015_c2015102110k.reformatted.reformatted2#csv]</parent-name>
+            <remote-alias>BEGIN_YEARMONTH</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BEGIN_DAY</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[BEGIN_DAY]</local-name>
+            <parent-name>[StormEvents_details-ftp_v1.0_d2015_c2015102110k.reformatted.reformatted2#csv]</parent-name>
+            <remote-alias>BEGIN_DAY</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BEGIN_TIME</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[BEGIN_TIME]</local-name>
+            <parent-name>[StormEvents_details-ftp_v1.0_d2015_c2015102110k.reformatted.reformatted2#csv]</parent-name>
+            <remote-alias>BEGIN_TIME</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>END_YEARMONTH</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[END_YEARMONTH]</local-name>
+            <parent-name>[StormEvents_details-ftp_v1.0_d2015_c2015102110k.reformatted.reformatted2#csv]</parent-name>
+            <remote-alias>END_YEARMONTH</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>END_DAY</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[END_DAY]</local-name>
+            <parent-name>[StormEvents_details-ftp_v1.0_d2015_c2015102110k.reformatted.reformatted2#csv]</parent-name>
+            <remote-alias>END_DAY</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>END_TIME</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[END_TIME]</local-name>
+            <parent-name>[StormEvents_details-ftp_v1.0_d2015_c2015102110k.reformatted.reformatted2#csv]</parent-name>
+            <remote-alias>END_TIME</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EPISODE_ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[EPISODE_ID]</local-name>
+            <parent-name>[StormEvents_details-ftp_v1.0_d2015_c2015102110k.reformatted.reformatted2#csv]</parent-name>
+            <remote-alias>EPISODE_ID</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EVENT_ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[EVENT_ID]</local-name>
+            <parent-name>[StormEvents_details-ftp_v1.0_d2015_c2015102110k.reformatted.reformatted2#csv]</parent-name>
+            <remote-alias>EVENT_ID</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>STATE</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[STATE]</local-name>
+            <parent-name>[StormEvents_details-ftp_v1.0_d2015_c2015102110k.reformatted.reformatted2#csv]</parent-name>
+            <remote-alias>STATE</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>STATE_FIPS</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[STATE_FIPS]</local-name>
+            <parent-name>[StormEvents_details-ftp_v1.0_d2015_c2015102110k.reformatted.reformatted2#csv]</parent-name>
+            <remote-alias>STATE_FIPS</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>YEAR</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[YEAR]</local-name>
+            <parent-name>[StormEvents_details-ftp_v1.0_d2015_c2015102110k.reformatted.reformatted2#csv]</parent-name>
+            <remote-alias>YEAR</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MONTH_NAME</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[MONTH_NAME]</local-name>
+            <parent-name>[StormEvents_details-ftp_v1.0_d2015_c2015102110k.reformatted.reformatted2#csv]</parent-name>
+            <remote-alias>MONTH_NAME</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EVENT_TYPE</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[EVENT_TYPE]</local-name>
+            <parent-name>[StormEvents_details-ftp_v1.0_d2015_c2015102110k.reformatted.reformatted2#csv]</parent-name>
+            <remote-alias>EVENT_TYPE</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CZ_TYPE</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CZ_TYPE]</local-name>
+            <parent-name>[StormEvents_details-ftp_v1.0_d2015_c2015102110k.reformatted.reformatted2#csv]</parent-name>
+            <remote-alias>CZ_TYPE</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CZ_FIPS</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[CZ_FIPS]</local-name>
+            <parent-name>[StormEvents_details-ftp_v1.0_d2015_c2015102110k.reformatted.reformatted2#csv]</parent-name>
+            <remote-alias>CZ_FIPS</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CZ_NAME</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CZ_NAME]</local-name>
+            <parent-name>[StormEvents_details-ftp_v1.0_d2015_c2015102110k.reformatted.reformatted2#csv]</parent-name>
+            <remote-alias>CZ_NAME</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>WFO</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[WFO]</local-name>
+            <parent-name>[StormEvents_details-ftp_v1.0_d2015_c2015102110k.reformatted.reformatted2#csv]</parent-name>
+            <remote-alias>WFO</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BEGIN_DATE_TIME</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[BEGIN_DATE_TIME]</local-name>
+            <parent-name>[StormEvents_details-ftp_v1.0_d2015_c2015102110k.reformatted.reformatted2#csv]</parent-name>
+            <remote-alias>BEGIN_DATE_TIME</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CZ_TIMEZONE</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CZ_TIMEZONE]</local-name>
+            <parent-name>[StormEvents_details-ftp_v1.0_d2015_c2015102110k.reformatted.reformatted2#csv]</parent-name>
+            <remote-alias>CZ_TIMEZONE</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>END_DATE_TIME</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[END_DATE_TIME]</local-name>
+            <parent-name>[StormEvents_details-ftp_v1.0_d2015_c2015102110k.reformatted.reformatted2#csv]</parent-name>
+            <remote-alias>END_DATE_TIME</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>INJURIES_DIRECT</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[INJURIES_DIRECT]</local-name>
+            <parent-name>[StormEvents_details-ftp_v1.0_d2015_c2015102110k.reformatted.reformatted2#csv]</parent-name>
+            <remote-alias>INJURIES_DIRECT</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>INJURIES_INDIRECT</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[INJURIES_INDIRECT]</local-name>
+            <parent-name>[StormEvents_details-ftp_v1.0_d2015_c2015102110k.reformatted.reformatted2#csv]</parent-name>
+            <remote-alias>INJURIES_INDIRECT</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DEATHS_DIRECT</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[DEATHS_DIRECT]</local-name>
+            <parent-name>[StormEvents_details-ftp_v1.0_d2015_c2015102110k.reformatted.reformatted2#csv]</parent-name>
+            <remote-alias>DEATHS_DIRECT</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DEATHS_INDIRECT</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[DEATHS_INDIRECT]</local-name>
+            <parent-name>[StormEvents_details-ftp_v1.0_d2015_c2015102110k.reformatted.reformatted2#csv]</parent-name>
+            <remote-alias>DEATHS_INDIRECT</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DAMAGE_PROPERTY</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[DAMAGE_PROPERTY]</local-name>
+            <parent-name>[StormEvents_details-ftp_v1.0_d2015_c2015102110k.reformatted.reformatted2#csv]</parent-name>
+            <remote-alias>DAMAGE_PROPERTY</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DAMAGE_CROPS</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[DAMAGE_CROPS]</local-name>
+            <parent-name>[StormEvents_details-ftp_v1.0_d2015_c2015102110k.reformatted.reformatted2#csv]</parent-name>
+            <remote-alias>DAMAGE_CROPS</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SOURCE</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[SOURCE]</local-name>
+            <parent-name>[StormEvents_details-ftp_v1.0_d2015_c2015102110k.reformatted.reformatted2#csv]</parent-name>
+            <remote-alias>SOURCE</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MAGNITUDE</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[MAGNITUDE]</local-name>
+            <parent-name>[StormEvents_details-ftp_v1.0_d2015_c2015102110k.reformatted.reformatted2#csv]</parent-name>
+            <remote-alias>MAGNITUDE</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MAGNITUDE_TYPE</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[MAGNITUDE_TYPE]</local-name>
+            <parent-name>[StormEvents_details-ftp_v1.0_d2015_c2015102110k.reformatted.reformatted2#csv]</parent-name>
+            <remote-alias>MAGNITUDE_TYPE</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FLOOD_CAUSE</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[FLOOD_CAUSE]</local-name>
+            <parent-name>[StormEvents_details-ftp_v1.0_d2015_c2015102110k.reformatted.reformatted2#csv]</parent-name>
+            <remote-alias>FLOOD_CAUSE</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CATEGORY</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CATEGORY]</local-name>
+            <parent-name>[StormEvents_details-ftp_v1.0_d2015_c2015102110k.reformatted.reformatted2#csv]</parent-name>
+            <remote-alias>CATEGORY</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TOR_F_SCALE</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[TOR_F_SCALE]</local-name>
+            <parent-name>[StormEvents_details-ftp_v1.0_d2015_c2015102110k.reformatted.reformatted2#csv]</parent-name>
+            <remote-alias>TOR_F_SCALE</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TOR_LENGTH</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[TOR_LENGTH]</local-name>
+            <parent-name>[StormEvents_details-ftp_v1.0_d2015_c2015102110k.reformatted.reformatted2#csv]</parent-name>
+            <remote-alias>TOR_LENGTH</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TOR_WIDTH</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TOR_WIDTH]</local-name>
+            <parent-name>[StormEvents_details-ftp_v1.0_d2015_c2015102110k.reformatted.reformatted2#csv]</parent-name>
+            <remote-alias>TOR_WIDTH</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TOR_OTHER_WFO</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[TOR_OTHER_WFO]</local-name>
+            <parent-name>[StormEvents_details-ftp_v1.0_d2015_c2015102110k.reformatted.reformatted2#csv]</parent-name>
+            <remote-alias>TOR_OTHER_WFO</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TOR_OTHER_CZ_STATE</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[TOR_OTHER_CZ_STATE]</local-name>
+            <parent-name>[StormEvents_details-ftp_v1.0_d2015_c2015102110k.reformatted.reformatted2#csv]</parent-name>
+            <remote-alias>TOR_OTHER_CZ_STATE</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TOR_OTHER_CZ_FIPS</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TOR_OTHER_CZ_FIPS]</local-name>
+            <parent-name>[StormEvents_details-ftp_v1.0_d2015_c2015102110k.reformatted.reformatted2#csv]</parent-name>
+            <remote-alias>TOR_OTHER_CZ_FIPS</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TOR_OTHER_CZ_NAME</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[TOR_OTHER_CZ_NAME]</local-name>
+            <parent-name>[StormEvents_details-ftp_v1.0_d2015_c2015102110k.reformatted.reformatted2#csv]</parent-name>
+            <remote-alias>TOR_OTHER_CZ_NAME</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BEGIN_RANGE</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[BEGIN_RANGE]</local-name>
+            <parent-name>[StormEvents_details-ftp_v1.0_d2015_c2015102110k.reformatted.reformatted2#csv]</parent-name>
+            <remote-alias>BEGIN_RANGE</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BEGIN_AZIMUTH</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[BEGIN_AZIMUTH]</local-name>
+            <parent-name>[StormEvents_details-ftp_v1.0_d2015_c2015102110k.reformatted.reformatted2#csv]</parent-name>
+            <remote-alias>BEGIN_AZIMUTH</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BEGIN_LOCATION</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[BEGIN_LOCATION]</local-name>
+            <parent-name>[StormEvents_details-ftp_v1.0_d2015_c2015102110k.reformatted.reformatted2#csv]</parent-name>
+            <remote-alias>BEGIN_LOCATION</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>END_RANGE</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[END_RANGE]</local-name>
+            <parent-name>[StormEvents_details-ftp_v1.0_d2015_c2015102110k.reformatted.reformatted2#csv]</parent-name>
+            <remote-alias>END_RANGE</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>END_AZIMUTH</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[END_AZIMUTH]</local-name>
+            <parent-name>[StormEvents_details-ftp_v1.0_d2015_c2015102110k.reformatted.reformatted2#csv]</parent-name>
+            <remote-alias>END_AZIMUTH</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>END_LOCATION</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[END_LOCATION]</local-name>
+            <parent-name>[StormEvents_details-ftp_v1.0_d2015_c2015102110k.reformatted.reformatted2#csv]</parent-name>
+            <remote-alias>END_LOCATION</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BEGIN_LAT</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[BEGIN_LAT]</local-name>
+            <parent-name>[StormEvents_details-ftp_v1.0_d2015_c2015102110k.reformatted.reformatted2#csv]</parent-name>
+            <remote-alias>BEGIN_LAT</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BEGIN_LON</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[BEGIN_LON]</local-name>
+            <parent-name>[StormEvents_details-ftp_v1.0_d2015_c2015102110k.reformatted.reformatted2#csv]</parent-name>
+            <remote-alias>BEGIN_LON</remote-alias>
+            <ordinal>45</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>END_LAT</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[END_LAT]</local-name>
+            <parent-name>[StormEvents_details-ftp_v1.0_d2015_c2015102110k.reformatted.reformatted2#csv]</parent-name>
+            <remote-alias>END_LAT</remote-alias>
+            <ordinal>46</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>END_LON</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[END_LON]</local-name>
+            <parent-name>[StormEvents_details-ftp_v1.0_d2015_c2015102110k.reformatted.reformatted2#csv]</parent-name>
+            <remote-alias>END_LON</remote-alias>
+            <ordinal>47</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EPISODE_NARRATIVE</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[EPISODE_NARRATIVE]</local-name>
+            <parent-name>[StormEvents_details-ftp_v1.0_d2015_c2015102110k.reformatted.reformatted2#csv]</parent-name>
+            <remote-alias>EPISODE_NARRATIVE</remote-alias>
+            <ordinal>48</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EVENT_NARRATIVE</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[EVENT_NARRATIVE]</local-name>
+            <parent-name>[StormEvents_details-ftp_v1.0_d2015_c2015102110k.reformatted.reformatted2#csv]</parent-name>
+            <remote-alias>EVENT_NARRATIVE</remote-alias>
+            <ordinal>49</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DATA_SOURCE</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[DATA_SOURCE]</local-name>
+            <parent-name>[StormEvents_details-ftp_v1.0_d2015_c2015102110k.reformatted.reformatted2#csv]</parent-name>
+            <remote-alias>DATA_SOURCE</remote-alias>
+            <ordinal>50</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BEGIN_MIN</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[BEGIN_MIN]</local-name>
+            <parent-name>[StormEvents_details-ftp_v1.0_d2015_c2015102110k.reformatted.reformatted2#csv]</parent-name>
+            <remote-alias>BEGIN_MIN</remote-alias>
+            <ordinal>51</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BEGIN_HOUR</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[BEGIN_HOUR]</local-name>
+            <parent-name>[StormEvents_details-ftp_v1.0_d2015_c2015102110k.reformatted.reformatted2#csv]</parent-name>
+            <remote-alias>BEGIN_HOUR</remote-alias>
+            <ordinal>52</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>END_MIN</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[END_MIN]</local-name>
+            <parent-name>[StormEvents_details-ftp_v1.0_d2015_c2015102110k.reformatted.reformatted2#csv]</parent-name>
+            <remote-alias>END_MIN</remote-alias>
+            <ordinal>53</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>END_HOUR</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[END_HOUR]</local-name>
+            <parent-name>[StormEvents_details-ftp_v1.0_d2015_c2015102110k.reformatted.reformatted2#csv]</parent-name>
+            <remote-alias>END_HOUR</remote-alias>
+            <ordinal>54</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[StormEvents_details-ftp_v1.0_d2015_c2015102110k.reformatted.reformatted2#csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Begin Azimuth' datatype='string' name='[BEGIN_AZIMUTH]' role='dimension' type='nominal' />
+      <column caption='Begin Date Time' datatype='string' name='[BEGIN_DATE_TIME]' role='dimension' type='nominal' />
+      <column caption='Begin Day' datatype='integer' name='[BEGIN_DAY]' role='dimension' type='quantitative' />
+      <column caption='Begin Hour' datatype='integer' name='[BEGIN_HOUR]' role='measure' type='quantitative' />
+      <column aggregation='Avg' caption='Begin Lat' datatype='real' name='[BEGIN_LAT]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column caption='Begin Location' datatype='string' name='[BEGIN_LOCATION]' role='dimension' type='nominal' />
+      <column aggregation='Avg' caption='Begin Lon' datatype='real' name='[BEGIN_LON]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column caption='Begin Min' datatype='real' name='[BEGIN_MIN]' role='measure' type='quantitative' />
+      <column caption='Begin Range' datatype='integer' name='[BEGIN_RANGE]' role='measure' type='quantitative' />
+      <column caption='Begin Time' datatype='real' name='[BEGIN_TIME]' role='measure' type='quantitative' />
+      <column caption='Begin Yearmonth' datatype='integer' name='[BEGIN_YEARMONTH]' role='measure' type='quantitative' />
+      <column caption='Category' datatype='string' name='[CATEGORY]' role='dimension' type='nominal' />
+      <column caption='Cz Fips' datatype='integer' name='[CZ_FIPS]' role='measure' type='quantitative' />
+      <column caption='Cz Name' datatype='string' name='[CZ_NAME]' role='dimension' type='nominal' />
+      <column caption='Cz Timezone' datatype='string' name='[CZ_TIMEZONE]' role='dimension' type='nominal' />
+      <column caption='Cz Type' datatype='string' name='[CZ_TYPE]' role='dimension' type='nominal' />
+      <column caption='DamageKPI' datatype='real' name='[Calculation_1039205627489529856]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF ([DAMAGE_CROPS] + [DAMAGE_PROPERTY]) / ([END_TIME] - [BEGIN_TIME]) &gt; 10000 THEN [Parameters].[DamageKPI Parameter 2]&#13;&#10;ELSEIF ([DAMAGE_CROPS] + [DAMAGE_PROPERTY]) / ([END_TIME] - [BEGIN_TIME]) &gt; 5000 THEN [Parameters].[DamageKPI Parameter 3]&#13;&#10;ELSEIF ([DAMAGE_CROPS] + [DAMAGE_PROPERTY]) / ([END_TIME] - [BEGIN_TIME]) &gt; 1000 THEN [Parameters].[DamageKPI Parameter]&#13;&#10;ELSEIF ([DAMAGE_CROPS] + [DAMAGE_PROPERTY]) / ([END_TIME] - [BEGIN_TIME]) &gt; 500 THEN [Parameters].[DamageKPI Parameter 4]&#13;&#10;END' />
+      </column>
+      <column caption='Damage Crops' datatype='integer' name='[DAMAGE_CROPS]' role='measure' type='quantitative' />
+      <column caption='Damage Property' datatype='real' name='[DAMAGE_PROPERTY]' role='measure' type='quantitative' />
+      <column caption='Data Source' datatype='string' name='[DATA_SOURCE]' role='dimension' type='nominal' />
+      <column caption='Deaths Direct' datatype='integer' name='[DEATHS_DIRECT]' role='measure' type='quantitative' />
+      <column caption='Deaths Indirect' datatype='integer' name='[DEATHS_INDIRECT]' role='measure' type='quantitative' />
+      <column caption='End Azimuth' datatype='string' name='[END_AZIMUTH]' role='dimension' type='nominal' />
+      <column caption='End Date Time' datatype='string' name='[END_DATE_TIME]' role='dimension' type='nominal' />
+      <column caption='End Day' datatype='integer' name='[END_DAY]' role='dimension' type='quantitative' />
+      <column caption='End Hour' datatype='integer' name='[END_HOUR]' role='measure' type='quantitative' />
+      <column aggregation='Avg' caption='End Lat' datatype='real' name='[END_LAT]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column caption='End Location' datatype='string' name='[END_LOCATION]' role='dimension' type='nominal' />
+      <column aggregation='Avg' caption='End Lon' datatype='real' name='[END_LON]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column caption='End Min' datatype='real' name='[END_MIN]' role='measure' type='quantitative' />
+      <column caption='End Range' datatype='integer' name='[END_RANGE]' role='measure' type='quantitative' />
+      <column caption='End Time' datatype='real' name='[END_TIME]' role='measure' type='quantitative' />
+      <column caption='End Yearmonth' datatype='integer' name='[END_YEARMONTH]' role='measure' type='quantitative' />
+      <column caption='Episode Id' datatype='integer' name='[EPISODE_ID]' role='dimension' type='ordinal' />
+      <column caption='Episode Narrative' datatype='string' name='[EPISODE_NARRATIVE]' role='dimension' type='nominal' />
+      <column caption='Event Id' datatype='integer' name='[EVENT_ID]' role='dimension' type='ordinal' />
+      <column caption='Event Narrative' datatype='string' name='[EVENT_NARRATIVE]' role='dimension' type='nominal' />
+      <column caption='Event Type' datatype='string' name='[EVENT_TYPE]' role='dimension' type='nominal' />
+      <column caption='Flood Cause' datatype='string' name='[FLOOD_CAUSE]' role='dimension' type='nominal' />
+      <column caption='Injuries Direct' datatype='integer' name='[INJURIES_DIRECT]' role='measure' type='quantitative' />
+      <column caption='Injuries Indirect' datatype='integer' name='[INJURIES_INDIRECT]' role='measure' type='quantitative' />
+      <column caption='Magnitude' datatype='real' name='[MAGNITUDE]' role='measure' type='quantitative' />
+      <column caption='Magnitude Type' datatype='string' name='[MAGNITUDE_TYPE]' role='dimension' type='nominal' />
+      <column caption='Month Name' datatype='string' name='[MONTH_NAME]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Source' datatype='string' name='[SOURCE]' role='dimension' type='nominal' />
+      <column caption='State' datatype='string' name='[STATE]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='State Fips' datatype='integer' name='[STATE_FIPS]' role='measure' type='quantitative' />
+      <column caption='Tor F Scale' datatype='string' name='[TOR_F_SCALE]' role='dimension' type='nominal' />
+      <column caption='Tor Length' datatype='real' name='[TOR_LENGTH]' role='measure' type='quantitative' />
+      <column caption='Tor Other Cz Fips' datatype='integer' name='[TOR_OTHER_CZ_FIPS]' role='measure' type='quantitative' />
+      <column caption='Tor Other Cz Name' datatype='string' name='[TOR_OTHER_CZ_NAME]' role='dimension' type='nominal' />
+      <column caption='Tor Other Cz State' datatype='string' name='[TOR_OTHER_CZ_STATE]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='Tor Other Wfo' datatype='string' name='[TOR_OTHER_WFO]' role='dimension' type='nominal' />
+      <column caption='Tor Width' datatype='integer' name='[TOR_WIDTH]' role='measure' type='quantitative' />
+      <column caption='Year' datatype='integer' name='[YEAR]' role='dimension' type='quantitative' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.499427' measure-ordering='alphabetic' measure-percentage='0.32417' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <datasource-dependencies datasource='Parameters'>
+        <column caption='Hi' datatype='real' name='[DamageKPI Parameter 2]' param-domain-type='range' role='measure' type='quantitative' value='10000.0'>
+          <calculation class='tableau' formula='10000.0' />
+          <range max='13800.000000005492' min='10000.0' />
+        </column>
+        <column caption='Medium' datatype='real' name='[DamageKPI Parameter 3]' param-domain-type='range' role='measure' type='quantitative' value='5000.0'>
+          <calculation class='tableau' formula='5000.0' />
+          <range max='10000.0' min='5000.0' />
+        </column>
+        <column caption='Lower' datatype='real' name='[DamageKPI Parameter 4]' param-domain-type='range' role='measure' type='quantitative' value='500.0'>
+          <calculation class='tableau' formula='500.0' />
+          <range max='1000.0' min='500.0' />
+        </column>
+        <column caption='Low' datatype='real' name='[DamageKPI Parameter]' param-domain-type='range' role='measure' type='quantitative' value='500.0'>
+          <calculation class='tableau' formula='500.0' />
+          <range max='10000.0' min='500.0' />
+        </column>
+      </datasource-dependencies>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='StormEvents_details-ftp_v1.0_d2015_c2015102110k.reformatted.reformatted2' name='textscan.42306.615652442131' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Hi' datatype='real' name='[DamageKPI Parameter 2]' param-domain-type='range' role='measure' type='quantitative' value='10000.0'>
+              <calculation class='tableau' formula='10000.0' />
+              <range max='13800.000000005492' min='10000.0' />
+            </column>
+            <column caption='Medium' datatype='real' name='[DamageKPI Parameter 3]' param-domain-type='range' role='measure' type='quantitative' value='5000.0'>
+              <calculation class='tableau' formula='5000.0' />
+              <range max='10000.0' min='5000.0' />
+            </column>
+            <column caption='Lower' datatype='real' name='[DamageKPI Parameter 4]' param-domain-type='range' role='measure' type='quantitative' value='500.0'>
+              <calculation class='tableau' formula='500.0' />
+              <range max='1000.0' min='500.0' />
+            </column>
+            <column caption='Low' datatype='real' name='[DamageKPI Parameter]' param-domain-type='range' role='measure' type='quantitative' value='500.0'>
+              <calculation class='tableau' formula='500.0' />
+              <range max='10000.0' min='500.0' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='textscan.42306.615652442131'>
+            <column caption='Begin Time' datatype='real' name='[BEGIN_TIME]' role='measure' type='quantitative' />
+            <column caption='DamageKPI' datatype='real' name='[Calculation_1039205627489529856]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF ([DAMAGE_CROPS] + [DAMAGE_PROPERTY]) / ([END_TIME] - [BEGIN_TIME]) &gt; 10000 THEN [Parameters].[DamageKPI Parameter 2]&#13;&#10;ELSEIF ([DAMAGE_CROPS] + [DAMAGE_PROPERTY]) / ([END_TIME] - [BEGIN_TIME]) &gt; 5000 THEN [Parameters].[DamageKPI Parameter 3]&#13;&#10;ELSEIF ([DAMAGE_CROPS] + [DAMAGE_PROPERTY]) / ([END_TIME] - [BEGIN_TIME]) &gt; 1000 THEN [Parameters].[DamageKPI Parameter]&#13;&#10;ELSEIF ([DAMAGE_CROPS] + [DAMAGE_PROPERTY]) / ([END_TIME] - [BEGIN_TIME]) &gt; 500 THEN [Parameters].[DamageKPI Parameter 4]&#13;&#10;END' />
+            </column>
+            <column caption='Damage Crops' datatype='integer' name='[DAMAGE_CROPS]' role='measure' type='quantitative' />
+            <column caption='Damage Property' datatype='real' name='[DAMAGE_PROPERTY]' role='measure' type='quantitative' />
+            <column caption='End Time' datatype='real' name='[END_TIME]' role='measure' type='quantitative' />
+            <column caption='Event Type' datatype='string' name='[EVENT_TYPE]' role='dimension' type='nominal' />
+            <column caption='State' datatype='string' name='[STATE]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[EVENT_TYPE]' derivation='None' name='[none:EVENT_TYPE:nk]' pivot='key' type='nominal' />
+            <column-instance column='[STATE]' derivation='None' name='[none:STATE:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_1039205627489529856]' derivation='Sum' name='[sum:Calculation_1039205627489529856:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[textscan.42306.615652442131].[sum:Calculation_1039205627489529856:qk]' included-values='in-range'>
+            <min>0.0</min>
+            <max>27100.000000001837</max>
+          </filter>
+          <slices>
+            <column>[textscan.42306.615652442131].[sum:Calculation_1039205627489529856:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='height' field='[textscan.42306.615652442131].[none:STATE:nk]' value='36' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[textscan.42306.615652442131].[sum:Calculation_1039205627489529856:qk]' max='27100.000000001837' min='0.0' palette='tableau-map-purple' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[textscan.42306.615652442131].[sum:Calculation_1039205627489529856:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[textscan.42306.615652442131].[none:STATE:nk]</rows>
+        <cols>[textscan.42306.615652442131].[none:EVENT_TYPE:nk]</cols>
+      </table>
+    </worksheet>
+  </worksheets>
+  <windows>
+    <window class='schema' source-height='-1' />
+    <window auto-hidden='0' class='worksheet' maximized='1' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card pane-specification-id='0' param='[textscan.42306.615652442131].[sum:Calculation_1039205627489529856:qk]' type='color' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='slider' param='[Parameters].[DamageKPI Parameter 2]' type='parameter' />
+          </strip>
+        </edge>
+      </cards>
+      <highlight>
+        <color-one-way>
+          <field>[Parameters].[DamageKPI Parameter]</field>
+          <field>[textscan.42306.615652442131].[none:CATEGORY:nk]</field>
+          <field>[textscan.42306.615652442131].[none:CZ_TYPE:nk]</field>
+          <field>[textscan.42306.615652442131].[none:EVENT_TYPE:nk]</field>
+          <field>[textscan.42306.615652442131].[none:MONTH_NAME:nk]</field>
+          <field>[textscan.42306.615652442131].[none:SOURCE:nk]</field>
+          <field>[textscan.42306.615652442131].[none:STATE:nk]</field>
+          <field>[textscan.42306.615652442131].[none:TOR_F_SCALE:nk]</field>
+          <field>[textscan.42306.615652442131].[none:TOR_OTHER_WFO:nk]</field>
+          <field>[textscan.42306.615652442131].[none:WFO:nk]</field>
+          <field>[textscan.42306.615652442131].[none:YEAR:qk]</field>
+        </color-one-way>
+      </highlight>
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+      AElFTkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
