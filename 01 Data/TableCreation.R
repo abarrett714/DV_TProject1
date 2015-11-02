@@ -4,13 +4,17 @@ require(ggplot2)
 
 setwd("~/DataVisualization/DV_TProject1/01 Data")
 
+<<<<<<< HEAD
 file_path <- "StormEvents_details-ftp_v1.0_d2015_c2015102110k.reformatted.csv"
+=======
+file_path <- "StormEvents_details-ftp_v1.0_d2015_c2015102110k.reformatted2.csv"
+>>>>>>> ac06e3ae33f968d29cbb8803a03451eea51835be
 
 df <- read.csv(file_path, stringsAsFactors = FALSE)
 
 #str(df)
 
-measures <- c("BEGIN_YEARMONTH", "BEGIN_DAY", "BEGIN_TIME", "END_YEARMONTH", "END_DAY", "END_TIME", "EPISODE_ID", "EVENT_ID", "STATE_FIPS", "YEAR", "CZ_FIPS", "INJURIES_DIRECT", "INJURIES_INDIRECT", "DEATHS_DIRECT", "DEATHS_INDIRECT", "DAMAGE_PROPERTY", "DAMAGE_CROPS", "MAGNITUDE", "TOR_LENGTH", "TOR_WIDTH", "BEGIN_RANGE", "END_RANGE", "BEGIN_LAT", "BEGIN_LON", "END_LAT", "END_LON")
+measures <- c("BEGIN_YEARMONTH", "BEGIN_DAY", "BEGIN_TIME", "END_YEARMONTH", "END_DAY", "END_TIME", "EPISODE_ID", "EVENT_ID", "STATE_FIPS", "YEAR", "CZ_FIPS", "INJURIES_DIRECT", "INJURIES_INDIRECT", "DEATHS_DIRECT", "DEATHS_INDIRECT", "DAMAGE_PROPERTY", "DAMAGE_CROPS", "MAGNITUDE", "TOR_LENGTH", "TOR_WIDTH", "BEGIN_RANGE", "END_RANGE", "BEGIN_LAT", "BEGIN_LON", "END_LAT", "END_LON", "BEGIN_HOUR", "BEGIN_MIN", "END_MIN", "END_HOUR")
 
 # Get rid of special characters in each column.
 # Google ASCII Table to understand the following:
