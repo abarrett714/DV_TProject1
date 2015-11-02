@@ -4,7 +4,7 @@ require(ggplot2)
 
 setwd("~/DataVisualization/DV_TProject1/01 Data")
 
-file_path <- "StormEvents_details-ftp_v1.0_d2015_c2015102110k.csv"
+file_path <- "StormEvents_details-ftp_v1.0_d2015_c2015102110k.reformatted.csv"
 
 df <- read.csv(file_path, stringsAsFactors = FALSE)
 
@@ -46,7 +46,7 @@ if( length(measures) > 1 || ! is.na(measures)) {
   }
 }
 
-write.csv(df, paste(gsub(".csv", "", file_path), ".reformatted.csv", sep=""), row.names=FALSE, na = "")
+write.csv(df, paste(gsub(".csv", "", file_path), ".reformatted2.csv", sep=""), row.names=FALSE, na = "")
 
 tableName <- gsub(" +", "_", gsub("[^A-z, 0-9, ]", "", gsub(".csv", "", file_path)))
 sql <- paste("CREATE TABLE", tableName, "(\n-- Change table_name to the table name you want.\n")
