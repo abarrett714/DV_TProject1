@@ -1,0 +1,1609 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 9100.15.0828.1711                                -->
+<workbook source-platform='win' version='9.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='STORMEVENTS (C##CS329E_MEW2795)' inline='true' name='oracle.42310.022580277779' version='9.1'>
+      <connection authentication='RDBMS' class='oracle' port='1521' schema='C##CS329E_MEW2795' server='sayonara.microlab.cs.utexas.edu' service='orcl' username='C##cs329e_mew2795'>
+        <relation name='STORMEVENTS' table='[C##CS329E_MEW2795].[STORMEVENTS]' type='table' />
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>BEGIN_YEARMONTH</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[BEGIN_YEARMONTH]</local-name>
+            <parent-name>[STORMEVENTS]</parent-name>
+            <remote-alias>BEGIN_YEARMONTH</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>26</precision>
+            <scale>4</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BEGIN_DAY</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[BEGIN_DAY]</local-name>
+            <parent-name>[STORMEVENTS]</parent-name>
+            <remote-alias>BEGIN_DAY</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>26</precision>
+            <scale>4</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BEGIN_TIME</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[BEGIN_TIME]</local-name>
+            <parent-name>[STORMEVENTS]</parent-name>
+            <remote-alias>BEGIN_TIME</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>26</precision>
+            <scale>4</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>END_YEARMONTH</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[END_YEARMONTH]</local-name>
+            <parent-name>[STORMEVENTS]</parent-name>
+            <remote-alias>END_YEARMONTH</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>26</precision>
+            <scale>4</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>END_DAY</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[END_DAY]</local-name>
+            <parent-name>[STORMEVENTS]</parent-name>
+            <remote-alias>END_DAY</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>26</precision>
+            <scale>4</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>END_TIME</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[END_TIME]</local-name>
+            <parent-name>[STORMEVENTS]</parent-name>
+            <remote-alias>END_TIME</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>26</precision>
+            <scale>4</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EPISODE_ID</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[EPISODE_ID]</local-name>
+            <parent-name>[STORMEVENTS]</parent-name>
+            <remote-alias>EPISODE_ID</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>26</precision>
+            <scale>4</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EVENT_ID</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[EVENT_ID]</local-name>
+            <parent-name>[STORMEVENTS]</parent-name>
+            <remote-alias>EVENT_ID</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>26</precision>
+            <scale>4</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>STATE_FIPS</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[STATE_FIPS]</local-name>
+            <parent-name>[STORMEVENTS]</parent-name>
+            <remote-alias>STATE_FIPS</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>26</precision>
+            <scale>4</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>YEAR</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[YEAR]</local-name>
+            <parent-name>[STORMEVENTS]</parent-name>
+            <remote-alias>YEAR</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>26</precision>
+            <scale>4</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CZ_FIPS</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[CZ_FIPS]</local-name>
+            <parent-name>[STORMEVENTS]</parent-name>
+            <remote-alias>CZ_FIPS</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>26</precision>
+            <scale>4</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>INJURIES_DIRECT</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[INJURIES_DIRECT]</local-name>
+            <parent-name>[STORMEVENTS]</parent-name>
+            <remote-alias>INJURIES_DIRECT</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>26</precision>
+            <scale>4</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>INJURIES_INDIRECT</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[INJURIES_INDIRECT]</local-name>
+            <parent-name>[STORMEVENTS]</parent-name>
+            <remote-alias>INJURIES_INDIRECT</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>26</precision>
+            <scale>4</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DEATHS_DIRECT</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[DEATHS_DIRECT]</local-name>
+            <parent-name>[STORMEVENTS]</parent-name>
+            <remote-alias>DEATHS_DIRECT</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>26</precision>
+            <scale>4</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DEATHS_INDIRECT</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[DEATHS_INDIRECT]</local-name>
+            <parent-name>[STORMEVENTS]</parent-name>
+            <remote-alias>DEATHS_INDIRECT</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>26</precision>
+            <scale>4</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DAMAGE_PROPERTY</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[DAMAGE_PROPERTY]</local-name>
+            <parent-name>[STORMEVENTS]</parent-name>
+            <remote-alias>DAMAGE_PROPERTY</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>26</precision>
+            <scale>4</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DAMAGE_CROPS</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[DAMAGE_CROPS]</local-name>
+            <parent-name>[STORMEVENTS]</parent-name>
+            <remote-alias>DAMAGE_CROPS</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>26</precision>
+            <scale>4</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MAGNITUDE</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[MAGNITUDE]</local-name>
+            <parent-name>[STORMEVENTS]</parent-name>
+            <remote-alias>MAGNITUDE</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>26</precision>
+            <scale>4</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TOR_LENGTH</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[TOR_LENGTH]</local-name>
+            <parent-name>[STORMEVENTS]</parent-name>
+            <remote-alias>TOR_LENGTH</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>26</precision>
+            <scale>4</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TOR_WIDTH</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[TOR_WIDTH]</local-name>
+            <parent-name>[STORMEVENTS]</parent-name>
+            <remote-alias>TOR_WIDTH</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>26</precision>
+            <scale>4</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BEGIN_RANGE</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[BEGIN_RANGE]</local-name>
+            <parent-name>[STORMEVENTS]</parent-name>
+            <remote-alias>BEGIN_RANGE</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>26</precision>
+            <scale>4</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>END_RANGE</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[END_RANGE]</local-name>
+            <parent-name>[STORMEVENTS]</parent-name>
+            <remote-alias>END_RANGE</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>26</precision>
+            <scale>4</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BEGIN_LAT</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[BEGIN_LAT]</local-name>
+            <parent-name>[STORMEVENTS]</parent-name>
+            <remote-alias>BEGIN_LAT</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>26</precision>
+            <scale>4</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BEGIN_LON</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[BEGIN_LON]</local-name>
+            <parent-name>[STORMEVENTS]</parent-name>
+            <remote-alias>BEGIN_LON</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>26</precision>
+            <scale>4</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>END_LAT</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[END_LAT]</local-name>
+            <parent-name>[STORMEVENTS]</parent-name>
+            <remote-alias>END_LAT</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>26</precision>
+            <scale>4</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>END_LON</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[END_LON]</local-name>
+            <parent-name>[STORMEVENTS]</parent-name>
+            <remote-alias>END_LON</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>26</precision>
+            <scale>4</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BEGIN_HOUR</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[BEGIN_HOUR]</local-name>
+            <parent-name>[STORMEVENTS]</parent-name>
+            <remote-alias>BEGIN_HOUR</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>26</precision>
+            <scale>4</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BEGIN_MIN</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[BEGIN_MIN]</local-name>
+            <parent-name>[STORMEVENTS]</parent-name>
+            <remote-alias>BEGIN_MIN</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>26</precision>
+            <scale>4</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>END_MIN</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[END_MIN]</local-name>
+            <parent-name>[STORMEVENTS]</parent-name>
+            <remote-alias>END_MIN</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>26</precision>
+            <scale>4</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>END_HOUR</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[END_HOUR]</local-name>
+            <parent-name>[STORMEVENTS]</parent-name>
+            <remote-alias>END_HOUR</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>26</precision>
+            <scale>4</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Begin Day' datatype='real' name='[BEGIN_DAY]' role='dimension' type='quantitative' />
+      <column caption='Begin Hour' datatype='real' name='[BEGIN_HOUR]' role='measure' type='quantitative' />
+      <column aggregation='Avg' caption='Begin Lat' datatype='real' name='[BEGIN_LAT]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column aggregation='Avg' caption='Begin Lon' datatype='real' name='[BEGIN_LON]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column caption='Begin Min' datatype='real' name='[BEGIN_MIN]' role='measure' type='quantitative' />
+      <column caption='Begin Range' datatype='real' name='[BEGIN_RANGE]' role='measure' type='quantitative' />
+      <column aggregation='Sum' caption='Begin Time' datatype='real' name='[BEGIN_TIME]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' caption='Begin Yearmonth' datatype='real' name='[BEGIN_YEARMONTH]' role='dimension' type='ordinal' />
+      <column caption='Cz Fips' datatype='real' name='[CZ_FIPS]' role='measure' type='quantitative' />
+      <column caption='Damage Crops' datatype='real' name='[DAMAGE_CROPS]' role='measure' type='quantitative' />
+      <column caption='Damage Property' datatype='real' name='[DAMAGE_PROPERTY]' role='measure' type='quantitative' />
+      <column caption='Deaths Direct' datatype='real' name='[DEATHS_DIRECT]' role='measure' type='quantitative' />
+      <column caption='Deaths Indirect' datatype='real' name='[DEATHS_INDIRECT]' role='measure' type='quantitative' />
+      <column caption='End Day' datatype='real' name='[END_DAY]' role='dimension' type='quantitative' />
+      <column caption='End Hour' datatype='real' name='[END_HOUR]' role='measure' type='quantitative' />
+      <column aggregation='Avg' caption='End Lat' datatype='real' name='[END_LAT]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column aggregation='Avg' caption='End Lon' datatype='real' name='[END_LON]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column caption='End Min' datatype='real' name='[END_MIN]' role='measure' type='quantitative' />
+      <column caption='End Range' datatype='real' name='[END_RANGE]' role='measure' type='quantitative' />
+      <column caption='End Time' datatype='real' name='[END_TIME]' role='measure' type='quantitative' />
+      <column caption='End Yearmonth' datatype='real' name='[END_YEARMONTH]' role='measure' type='quantitative' />
+      <column caption='Episode Id' datatype='real' name='[EPISODE_ID]' role='dimension' type='ordinal' />
+      <column caption='Event Id' datatype='real' name='[EVENT_ID]' role='dimension' type='ordinal' />
+      <column caption='Injuries Direct' datatype='real' name='[INJURIES_DIRECT]' role='measure' type='quantitative' />
+      <column caption='Injuries Indirect' datatype='real' name='[INJURIES_INDIRECT]' role='measure' type='quantitative' />
+      <column caption='Magnitude' datatype='real' name='[MAGNITUDE]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='State Fips' datatype='real' name='[STATE_FIPS]' role='measure' type='quantitative' />
+      <column caption='Tor Length' datatype='real' name='[TOR_LENGTH]' role='measure' type='quantitative' />
+      <column caption='Tor Width' datatype='real' name='[TOR_WIDTH]' role='measure' type='quantitative' />
+      <column caption='Year' datatype='real' name='[YEAR]' role='dimension' type='ordinal' />
+      <extract count='-1' enabled='true' units='records'>
+        <connection class='dataengine' dbname='C:\Users\mew\Documents\My Tableau Repository\Workbooks\STORMEVENTS (C##CS329E_MEW2795).tde' schema='Extract' tablename='Extract' update-time='11/02/2015 06:45:28 AM'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <calculations>
+            <calculation column='[Number of Records]' formula='1' />
+          </calculations>
+          <refresh>
+            <refresh-event add-from-file-path='' increment-value='%null%' refresh-type='create' rows-inserted='10000' timestamp-start='2015-11-02 06:45:28.522' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>BEGIN_DAY</remote-name>
+              <remote-type>4</remote-type>
+              <local-name>[BEGIN_DAY]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>BEGIN_DAY</remote-alias>
+              <ordinal>0</ordinal>
+              <family>STORMEVENTS</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>31</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='real'>1.0</statistic>
+                <statistic aggregation='Max' datatype='real'>31.0</statistic>
+                <statistic aggregation='Count' datatype='integer'>10000</statistic>
+                <statistic aggregation='Median' datatype='real'>16.0</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;array&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (ordered)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>0</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;float&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>BEGIN_HOUR</remote-name>
+              <remote-type>4</remote-type>
+              <local-name>[BEGIN_HOUR]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>BEGIN_HOUR</remote-alias>
+              <ordinal>1</ordinal>
+              <family>STORMEVENTS</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>24</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='real'>0.0</statistic>
+                <statistic aggregation='Max' datatype='real'>23.0</statistic>
+                <statistic aggregation='Count' datatype='integer'>10000</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;array&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>10</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;float&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>BEGIN_LAT</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[BEGIN_LAT]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>BEGIN_LAT</remote-alias>
+              <ordinal>2</ordinal>
+              <family>STORMEVENTS</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3534</approx-count>
+              <contains-null>true</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='real'>18.176200000000001</statistic>
+                <statistic aggregation='Max' datatype='real'>61.674599999999998</statistic>
+                <statistic aggregation='Count' datatype='integer'>6521</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;array&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>25</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>2</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>BEGIN_LON</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[BEGIN_LON]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>BEGIN_LON</remote-alias>
+              <ordinal>3</ordinal>
+              <family>STORMEVENTS</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4117</approx-count>
+              <contains-null>true</contains-null>
+              <statistics>
+                <statistic aggregation='Sum' datatype='real'>-593758.92959999817</statistic>
+                <statistic aggregation='Avg' datatype='real'>-91.053355252261639</statistic>
+                <statistic aggregation='Min' datatype='real'>-159.4796</statistic>
+                <statistic aggregation='Max' datatype='real'>-64.946700000000007</statistic>
+                <statistic aggregation='Stdev' datatype='real'>10.419998342970546</statistic>
+                <statistic aggregation='StdevP' datatype='real'>10.419199355249939</statistic>
+                <statistic aggregation='Var' datatype='real'>108.57636546750892</statistic>
+                <statistic aggregation='VarP' datatype='real'>108.55971520444075</statistic>
+                <statistic aggregation='Count' datatype='integer'>6521</statistic>
+                <statistic aggregation='SumXSqr' datatype='real'>54771660.653919406</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;array&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>27</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>2</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>BEGIN_MIN</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[BEGIN_MIN]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>BEGIN_MIN</remote-alias>
+              <ordinal>4</ordinal>
+              <family>STORMEVENTS</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>60</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='real'>0.0</statistic>
+                <statistic aggregation='Max' datatype='real'>0.98329999999999995</statistic>
+                <statistic aggregation='Count' datatype='integer'>10000</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;array&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>16</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>BEGIN_RANGE</remote-name>
+              <remote-type>4</remote-type>
+              <local-name>[BEGIN_RANGE]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>BEGIN_RANGE</remote-alias>
+              <ordinal>5</ordinal>
+              <family>STORMEVENTS</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>42</approx-count>
+              <contains-null>true</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='real'>0.0</statistic>
+                <statistic aggregation='Max' datatype='real'>76.0</statistic>
+                <statistic aggregation='Count' datatype='integer'>6521</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;array&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>14</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;float&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>BEGIN_TIME</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[BEGIN_TIME]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>BEGIN_TIME</remote-alias>
+              <ordinal>6</ordinal>
+              <family>STORMEVENTS</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1138</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='real'>0.0</statistic>
+                <statistic aggregation='Max' datatype='real'>23.966699999999999</statistic>
+                <statistic aggregation='Count' datatype='integer'>10000</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;array&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>24</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>2</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>BEGIN_YEARMONTH</remote-name>
+              <remote-type>4</remote-type>
+              <local-name>[BEGIN_YEARMONTH]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>BEGIN_YEARMONTH</remote-alias>
+              <ordinal>7</ordinal>
+              <family>STORMEVENTS</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='real'>201501.0</statistic>
+                <statistic aggregation='Max' datatype='real'>201507.0</statistic>
+                <statistic aggregation='Count' datatype='integer'>10000</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;array&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>6</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;float&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CZ_FIPS</remote-name>
+              <remote-type>4</remote-type>
+              <local-name>[CZ_FIPS]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CZ_FIPS</remote-alias>
+              <ordinal>8</ordinal>
+              <family>STORMEVENTS</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>403</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='real'>1.0</statistic>
+                <statistic aggregation='Max' datatype='real'>856.0</statistic>
+                <statistic aggregation='Count' datatype='integer'>10000</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;array&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>22</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>2</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;float&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>DAMAGE_CROPS</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[DAMAGE_CROPS]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>DAMAGE_CROPS</remote-alias>
+              <ordinal>9</ordinal>
+              <family>STORMEVENTS</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>28</approx-count>
+              <contains-null>true</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='real'>0.0</statistic>
+                <statistic aggregation='Max' datatype='real'>500.0</statistic>
+                <statistic aggregation='Count' datatype='integer'>8240</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;array&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>12</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>DAMAGE_PROPERTY</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[DAMAGE_PROPERTY]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>DAMAGE_PROPERTY</remote-alias>
+              <ordinal>10</ordinal>
+              <family>STORMEVENTS</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>78</approx-count>
+              <contains-null>true</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='real'>0.0</statistic>
+                <statistic aggregation='Max' datatype='real'>800.0</statistic>
+                <statistic aggregation='Count' datatype='integer'>8195</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;array&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>19</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>DEATHS_DIRECT</remote-name>
+              <remote-type>4</remote-type>
+              <local-name>[DEATHS_DIRECT]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>DEATHS_DIRECT</remote-alias>
+              <ordinal>11</ordinal>
+              <family>STORMEVENTS</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='real'>0.0</statistic>
+                <statistic aggregation='Max' datatype='real'>4.0</statistic>
+                <statistic aggregation='Count' datatype='integer'>10000</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;array&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>5</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;float&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>DEATHS_INDIRECT</remote-name>
+              <remote-type>4</remote-type>
+              <local-name>[DEATHS_INDIRECT]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>DEATHS_INDIRECT</remote-alias>
+              <ordinal>12</ordinal>
+              <family>STORMEVENTS</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='real'>0.0</statistic>
+                <statistic aggregation='Max' datatype='real'>3.0</statistic>
+                <statistic aggregation='Count' datatype='integer'>10000</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;array&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>4</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;float&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>END_DAY</remote-name>
+              <remote-type>4</remote-type>
+              <local-name>[END_DAY]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>END_DAY</remote-alias>
+              <ordinal>13</ordinal>
+              <family>STORMEVENTS</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>31</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='real'>1.0</statistic>
+                <statistic aggregation='Max' datatype='real'>31.0</statistic>
+                <statistic aggregation='Count' datatype='integer'>10000</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;array&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;float&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>END_HOUR</remote-name>
+              <remote-type>4</remote-type>
+              <local-name>[END_HOUR]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>END_HOUR</remote-alias>
+              <ordinal>14</ordinal>
+              <family>STORMEVENTS</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>24</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='real'>0.0</statistic>
+                <statistic aggregation='Max' datatype='real'>23.0</statistic>
+                <statistic aggregation='Count' datatype='integer'>10000</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;array&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>11</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;float&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>END_LAT</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[END_LAT]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>END_LAT</remote-alias>
+              <ordinal>15</ordinal>
+              <family>STORMEVENTS</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3786</approx-count>
+              <contains-null>true</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='real'>18.175999999999998</statistic>
+                <statistic aggregation='Max' datatype='real'>61.674599999999998</statistic>
+                <statistic aggregation='Count' datatype='integer'>6521</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;array&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>26</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>2</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>END_LON</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[END_LON]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>END_LON</remote-alias>
+              <ordinal>16</ordinal>
+              <family>STORMEVENTS</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4316</approx-count>
+              <contains-null>true</contains-null>
+              <statistics>
+                <statistic aggregation='Sum' datatype='real'>-593718.43509999791</statistic>
+                <statistic aggregation='Avg' datatype='real'>-91.047145391810744</statistic>
+                <statistic aggregation='Min' datatype='real'>-159.47550000000001</statistic>
+                <statistic aggregation='Max' datatype='real'>-64.948400000000007</statistic>
+                <statistic aggregation='Stdev' datatype='real'>10.414166435301995</statistic>
+                <statistic aggregation='StdevP' datatype='real'>10.413367894762134</statistic>
+                <statistic aggregation='Var' datatype='real'>108.45486254217067</statistic>
+                <statistic aggregation='VarP' datatype='real'>108.43823091166276</statistic>
+                <statistic aggregation='Count' datatype='integer'>6521</statistic>
+                <statistic aggregation='SumXSqr' datatype='real'>54763494.386122823</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;array&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>28</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>2</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>END_MIN</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[END_MIN]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>END_MIN</remote-alias>
+              <ordinal>17</ordinal>
+              <family>STORMEVENTS</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>60</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='real'>0.0</statistic>
+                <statistic aggregation='Max' datatype='real'>0.98329999999999995</statistic>
+                <statistic aggregation='Count' datatype='integer'>10000</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;array&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>17</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>END_RANGE</remote-name>
+              <remote-type>4</remote-type>
+              <local-name>[END_RANGE]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>END_RANGE</remote-alias>
+              <ordinal>18</ordinal>
+              <family>STORMEVENTS</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>44</approx-count>
+              <contains-null>true</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='real'>0.0</statistic>
+                <statistic aggregation='Max' datatype='real'>76.0</statistic>
+                <statistic aggregation='Count' datatype='integer'>6521</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;array&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>15</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;float&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>END_TIME</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[END_TIME]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>END_TIME</remote-alias>
+              <ordinal>19</ordinal>
+              <family>STORMEVENTS</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1125</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='real'>0.0</statistic>
+                <statistic aggregation='Max' datatype='real'>23.9833</statistic>
+                <statistic aggregation='Count' datatype='integer'>10000</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;array&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>23</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>2</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>END_YEARMONTH</remote-name>
+              <remote-type>4</remote-type>
+              <local-name>[END_YEARMONTH]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>END_YEARMONTH</remote-alias>
+              <ordinal>20</ordinal>
+              <family>STORMEVENTS</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='real'>201501.0</statistic>
+                <statistic aggregation='Max' datatype='real'>201507.0</statistic>
+                <statistic aggregation='Count' datatype='integer'>10000</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;array&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>7</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;float&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>EPISODE_ID</remote-name>
+              <remote-type>4</remote-type>
+              <local-name>[EPISODE_ID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>EPISODE_ID</remote-alias>
+              <ordinal>21</ordinal>
+              <family>STORMEVENTS</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3439</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='real'>91916.0</statistic>
+                <statistic aggregation='Max' datatype='real'>1417197.0</statistic>
+                <statistic aggregation='Count' datatype='integer'>10000</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;array&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>2</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>2</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;float&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>EVENT_ID</remote-name>
+              <remote-type>4</remote-type>
+              <local-name>[EVENT_ID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>EVENT_ID</remote-alias>
+              <ordinal>22</ordinal>
+              <family>STORMEVENTS</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8832</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Sum' datatype='real'>5731798973.0</statistic>
+                <statistic aggregation='Avg' datatype='real'>573179.89729999995</statistic>
+                <statistic aggregation='Min' datatype='real'>546734.0</statistic>
+                <statistic aggregation='Max' datatype='real'>598063.0</statistic>
+                <statistic aggregation='Stdev' datatype='real'>13534.367977187218</statistic>
+                <statistic aggregation='StdevP' datatype='real'>13533.691241869554</statistic>
+                <statistic aggregation='Var' datatype='real'>183179116.54191083</statistic>
+                <statistic aggregation='VarP' datatype='real'>183160798.63025665</statistic>
+                <statistic aggregation='Count' datatype='integer'>10000</statistic>
+                <statistic aggregation='SumXSqr' datatype='real'>3287183554674688.0</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>3</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;float&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>INJURIES_DIRECT</remote-name>
+              <remote-type>4</remote-type>
+              <local-name>[INJURIES_DIRECT]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>INJURIES_DIRECT</remote-alias>
+              <ordinal>23</ordinal>
+              <family>STORMEVENTS</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='real'>0.0</statistic>
+                <statistic aggregation='Max' datatype='real'>15.0</statistic>
+                <statistic aggregation='Count' datatype='integer'>10000</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;array&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>8</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;float&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>INJURIES_INDIRECT</remote-name>
+              <remote-type>4</remote-type>
+              <local-name>[INJURIES_INDIRECT]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>INJURIES_INDIRECT</remote-alias>
+              <ordinal>24</ordinal>
+              <family>STORMEVENTS</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='real'>0.0</statistic>
+                <statistic aggregation='Max' datatype='real'>35.0</statistic>
+                <statistic aggregation='Count' datatype='integer'>10000</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;array&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>9</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;float&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>MAGNITUDE</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[MAGNITUDE]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>MAGNITUDE</remote-alias>
+              <ordinal>25</ordinal>
+              <family>STORMEVENTS</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>81</approx-count>
+              <contains-null>true</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='real'>0.5</statistic>
+                <statistic aggregation='Max' datatype='real'>113.0</statistic>
+                <statistic aggregation='Count' datatype='integer'>5219</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;array&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>20</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Number of Records</remote-name>
+              <remote-type>16</remote-type>
+              <local-name>[Number of Records]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Number of Records</remote-alias>
+              <ordinal>26</ordinal>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='integer'>1</statistic>
+                <statistic aggregation='Max' datatype='integer'>1</statistic>
+                <statistic aggregation='Count' datatype='integer'>10000</statistic>
+                <statistic aggregation='Median' datatype='integer'>1</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='string' name='DebugRemoteMetadata (ordered)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;sint8&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>STATE_FIPS</remote-name>
+              <remote-type>4</remote-type>
+              <local-name>[STATE_FIPS]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>STATE_FIPS</remote-alias>
+              <ordinal>27</ordinal>
+              <family>STORMEVENTS</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>65</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='real'>1.0</statistic>
+                <statistic aggregation='Max' datatype='real'>99.0</statistic>
+                <statistic aggregation='Count' datatype='integer'>10000</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;array&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>18</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;float&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>TOR_LENGTH</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[TOR_LENGTH]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>TOR_LENGTH</remote-alias>
+              <ordinal>28</ordinal>
+              <family>STORMEVENTS</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>128</approx-count>
+              <contains-null>true</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='real'>0.01</statistic>
+                <statistic aggregation='Max' datatype='real'>28.719999999999999</statistic>
+                <statistic aggregation='Count' datatype='integer'>207</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;array&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>21</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>TOR_WIDTH</remote-name>
+              <remote-type>4</remote-type>
+              <local-name>[TOR_WIDTH]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>TOR_WIDTH</remote-alias>
+              <ordinal>29</ordinal>
+              <family>STORMEVENTS</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>33</approx-count>
+              <contains-null>true</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='real'>10.0</statistic>
+                <statistic aggregation='Max' datatype='real'>1700.0</statistic>
+                <statistic aggregation='Count' datatype='integer'>207</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;array&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>13</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;float&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>YEAR</remote-name>
+              <remote-type>4</remote-type>
+              <local-name>[YEAR]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>YEAR</remote-alias>
+              <ordinal>30</ordinal>
+              <family>STORMEVENTS</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='real'>2015.0</statistic>
+                <statistic aggregation='Max' datatype='real'>2015.0</statistic>
+                <statistic aggregation='Count' datatype='integer'>10000</statistic>
+                <statistic aggregation='Median' datatype='real'>2015.0</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;array&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (ordered)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;float&quot;</attribute>
+              </attributes>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' dim-percentage='0.5' measure-ordering='alphabetic' measure-percentage='0.4' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 3'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='STORMEVENTS (C##CS329E_MEW2795)' name='oracle.42310.022580277779' />
+          </datasources>
+          <datasource-dependencies datasource='oracle.42310.022580277779'>
+            <column aggregation='Sum' caption='Begin Yearmonth' datatype='real' name='[BEGIN_YEARMONTH]' role='dimension' type='ordinal' />
+            <column caption='Damage Property' datatype='real' name='[DAMAGE_PROPERTY]' role='measure' type='quantitative' />
+            <column caption='Deaths Direct' datatype='real' name='[DEATHS_DIRECT]' role='measure' type='quantitative' />
+            <column caption='Deaths Indirect' datatype='real' name='[DEATHS_INDIRECT]' role='measure' type='quantitative' />
+            <column-instance column='[BEGIN_YEARMONTH]' derivation='None' name='[none:BEGIN_YEARMONTH:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[DAMAGE_PROPERTY]' derivation='Sum' name='[sum:DAMAGE_PROPERTY:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[DEATHS_DIRECT]' derivation='Sum' name='[sum:DEATHS_DIRECT:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[DEATHS_INDIRECT]' derivation='Sum' name='[sum:DEATHS_INDIRECT:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='refline'>
+            <format attr='fill-above' id='refline0' value='#00000000' />
+            <format attr='fill-below' id='refline0' value='#00000000' />
+            <format attr='fill-above' id='refline1' value='#00000000' />
+            <format attr='fill-below' id='refline1' value='#00000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[oracle.42310.022580277779].[sum:DAMAGE_PROPERTY:qk]' />
+            </encodings>
+            <reference-line axis-column='[oracle.42310.022580277779].[sum:DEATHS_DIRECT:qk]' enable-instant-analytics='true' formula='average' id='refline0' label-type='none' probability='95' scope='per-pane' value-column='[oracle.42310.022580277779].[sum:DEATHS_DIRECT:qk]' z-order='1' />
+            <reference-line axis-column='[oracle.42310.022580277779].[sum:DEATHS_INDIRECT:qk]' enable-instant-analytics='true' formula='average' id='refline1' label-type='none' probability='95' scope='per-pane' value-column='[oracle.42310.022580277779].[sum:DEATHS_INDIRECT:qk]' z-order='2' />
+          </pane>
+          <pane id='1' y-axis-name='[oracle.42310.022580277779].[sum:DEATHS_INDIRECT:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[oracle.42310.022580277779].[sum:DAMAGE_PROPERTY:qk]' />
+            </encodings>
+          </pane>
+          <pane id='2' y-axis-name='[oracle.42310.022580277779].[sum:DEATHS_DIRECT:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[oracle.42310.022580277779].[sum:DAMAGE_PROPERTY:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([oracle.42310.022580277779].[sum:DEATHS_INDIRECT:qk] + [oracle.42310.022580277779].[sum:DEATHS_DIRECT:qk])</rows>
+        <cols>[oracle.42310.022580277779].[none:BEGIN_YEARMONTH:ok]</cols>
+      </table>
+    </worksheet>
+  </worksheets>
+  <windows>
+    <window class='schema' source-height='-1' />
+    <window auto-hidden='0' class='worksheet' maximized='1' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card pane-specification-id='1' param='[oracle.42310.022580277779].[sum:DAMAGE_PROPERTY:qk]' type='color' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <highlight>
+        <color-one-way>
+          <field>[oracle.42310.022580277779].[none:BEGIN_DAY:qk]</field>
+          <field>[oracle.42310.022580277779].[none:BEGIN_TIME:ok]</field>
+          <field>[oracle.42310.022580277779].[none:BEGIN_YEARMONTH:ok]</field>
+          <field>[oracle.42310.022580277779].[none:EVENT_ID:ok]</field>
+          <field>[oracle.42310.022580277779].[none:YEAR:ok]</field>
+          <field>[oracle.42310.022580277779].[none:YEAR:qk]</field>
+        </color-one-way>
+      </highlight>
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 3' width='192'>
+      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
+      0wLQAAAAAElFTkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
