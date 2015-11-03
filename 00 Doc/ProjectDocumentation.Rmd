@@ -8,7 +8,9 @@ output: html_document
 This project creates visuals from a set of data from natural disasters throughout the United States.
 
 The first Tableau Visualization is a pair of scatter plots that shows both crop damage and property damage versus total time of the disaster. A calculated field was implemented to calculate the total time of the disaster from the begninning and ending time. 
+![](../03 Visualizations/ScatterPlot.jpg)
 
-![](./Visualization1.pdf)
+The second Tableau Visualization shows a Crosstab of States vs Event Types. The cells are colored by a KPI of Damage over Event Time, employing a paramater to filter out low levels of damage. The KPI creates a metric for intensity of the storm, rather than sum of damage. This makes it easier to compare the severity of the event.
 
-
+![](../03 Visualizations/Crosstab.jpg)
+![](../03 Visualizations/BarGraph.jpg)

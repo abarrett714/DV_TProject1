@@ -1,0 +1,17 @@
+{
+    "contents" : "---\ntitle: \"TProject1 Project Documentation\"\nauthor: \"Adam-Malachi-JD\"\ndate: \"November 2, 2015\"\noutput: html_document\n---\n\nThis project creates visuals from a set of data from natural disasters throughout the United States.\n\nThe first Tableau Visualization is a pair of scatter plots that shows both crop damage and property damage versus total time of the disaster. A calculated field was implemented to calculate the total time of the disaster from the begninning and ending time. \n![](../03 Visualizations/ScatterPlot.jpg)\n\nThe second Tableau Visualization shows a Crosstab of States vs Event Types. The cells are colored by a KPI of Damage over Event Time, employing a paramater to filter out low levels of damage. The KPI creates a metric for intensity of the storm, rather than sum of damage. This makes it easier to compare the severity of the event.\n\n![](../03 Visualizations/Crosstab.jpg)\n![](../03 Visualizations/BarGraph.jpg)\n",
+    "created" : 1446513923489.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3413085734",
+    "id" : "4E618AE1",
+    "lastKnownWriteTime" : 1446514766,
+    "path" : "~/DataVisualization/DV_TProject1/00 Doc/ProjectDocumentation.Rmd",
+    "project_path" : "00 Doc/ProjectDocumentation.Rmd",
+    "properties" : {
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "type" : "r_markdown"
+}
