@@ -13,4 +13,7 @@ The first Tableau Visualization is a pair of scatter plots that shows both crop 
 The second Tableau Visualization shows a Crosstab of States vs Event Types. The cells are colored by a KPI of Damage over Event Time, employing a paramater to filter out low levels of damage. The KPI creates a metric for intensity of the storm, rather than sum of damage. This makes it easier to compare the severity of the event.
 
 ![](../03 Visualizations/Crosstab.jpg)
+
+The third Tableau Visualization is two bar graphs that show indirect and direct deaths caused by disasters in the first seven months of 2015. The graphs were colored by property damage in order to show how the number of deaths relates to the overall distruction caused by these disasters. A reference line is also added to show the average deaths for each over the seven month period.
+
 ![](../03 Visualizations/BarGraph.jpg)
