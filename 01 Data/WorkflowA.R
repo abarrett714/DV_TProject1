@@ -1,39 +1,44 @@
 #CrosstabWorkflow
 require(tidyr)
+require(ggplot2)
 require(dplyr)
 library(lubridate)
+require("jsonlite")
+require("RCurl")
 setwd("~/DataVisualization/DV_TProject1/01 Data")
 
 file_path <- "StormEvents_details-ftp_v1.0_d2015_c2015102110k.reformatted2.csv"
 
-df <- read.csv(file_path, stringsAsFactors = FALSE)
+#df <- read.csv(file_path, stringsAsFactors = FALSE)
 
-head(select(df, BEGIN_TIME))
+df <- data.frame(fromJSON(getURL(URLencode('skipper.cs.utexas.edu:5001/rest/native/?query="select * from STORMEVENTS"'),httpheader=c(DB='jdbc:oracle:thin:@sayonara.microlab.cs.utexas.edu:1521:orcl', USER='C##cs329e_apb766', PASS='orcl_apb766', MODE='native_mode', MODEL='model', returnDimensions = 'False', returnFor = 'JSON'), verbose = TRUE), ))
 
-df2 <- df %>% select(., EVENT_TYPE, STATE, DAMAGE_CROPS, DAMAGE_PROPERTY, BEGIN_TIME, END_TIME) %>% filter(., DAMAGE_CROPS != 0 | DAMAGE_PROPERTY != 0) %>% mutate(., DAMAGE_KPI = (DAMAGE_CROPS+ DAMAGE_PROPERTY) / (END_TIME - BEGIN_TIME)) %>% filter(., DAMAGE_KPI > 500)
+RegDF <- data.frame(fromJSON(getURL(URLencode('skipper.cs.utexas.edu:5001/rest/native/?query="select * from STATEREGION"'),httpheader=c(DB='jdbc:oracle:thin:@sayonara.microlab.cs.utexas.edu:1521:orcl', USER='C##cs329e_apb766', PASS='orcl_apb766', MODE='native_mode', MODEL='model', returnDimensions = 'False', returnFor = 'JSON'), verbose = TRUE), ))
 
+head(df)
+
+df2 <- df %>% select(., EVENT_TYPE, STATE, DAMAGE_CROPS, DAMAGE_PROPERTY, BEGIN_TIME, END_TIME) %>% mutate(DAMAGE_CROPS = strtoi(DAMAGE_CROPS), DAMAGE_PROPERTY = strtoi(DAMAGE_PROPERTY)) %>% filter(., DAMAGE_CROPS > 1 | DAMAGE_PROPERTY > 1) %>% filter(., DAMAGE_CROPS != "null" & DAMAGE_PROPERTY != "null") %>% mutate(., DAMAGE_KPI = (as.numeric(DAMAGE_CROPS) + as.numeric(DAMAGE_PROPERTY)) / (as.numeric(END_TIME) - as.numeric(BEGIN_TIME))) %>% filter(., DAMAGE_KPI > 80 & DAMAGE_KPI != Inf) %>% arrange(STATE) %>% distinct()
+
+View(df2)
+
+df3 <- df2 %>% group_by(., EVENT_TYPE, STATE) %>% mutate(KPI = cumsum(DAMAGE_KPI)) %>% mutate(MAX = max(KPI)) %>% select(EVENT_TYPE, STATE, MAX) %>% distinct()
+
+View(df3)
+df3 <- left_join(df3, RegDF, by = "STATE")
 head(df2)
 
 ggplot() + 
   coord_cartesian() + 
   scale_x_discrete() +
   scale_y_discrete() +
+  scale_fill_gradient(low="white", high="red") +
   labs(title='Damage From Natural Disasters') +
-  labs(x=paste("COLOR"), y=paste("CLARITY")) +
-  layer(data=df2, 
-        mapping=aes(x=EVENT_TYPE, y=STATE, fill = DAMAGE_KPI), 
+  labs(x=paste("Disaster"), y=paste("State")) +
+  layer(data=df3, 
+        mapping=aes(x=EVENT_TYPE, y=REGION, fill = MAX), 
         stat="identity", 
         stat_params=list(), 
         geom="tile",
         geom_params=list(), 
         position=position_identity()
   )
-
-layer(data=df, 
-      mapping=aes(x=COLOR, y=CLARITY, fill=KPI), 
-      stat="identity", 
-      stat_params=list(), 
-      geom="tile",
-      geom_params=list(alpha=0.50), 
-      position=position_identity()
-)

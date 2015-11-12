@@ -1,0 +1,18 @@
+{
+    "contents" : "#CrosstabWorkflow\nrequire(tidyr)\nrequire(dplyr)\nlibrary(lubridate)\nrequire(\"jsonlite\")\nrequire(\"RCurl\")\nsetwd(\"~/DataVisualization/DV_TProject1/01 Data\")\n\nfile_path <- \"StormEvents_details-ftp_v1.0_d2015_c2015102110k.reformatted2.csv\"\n\n#df <- read.csv(file_path, stringsAsFactors = FALSE)\n\ndf <- data.frame(fromJSON(getURL(URLencode('skipper.cs.utexas.edu:5001/rest/native/?query=\"select * from STORMEVENTS\"'),httpheader=c(DB='jdbc:oracle:thin:@sayonara.microlab.cs.utexas.edu:1521:orcl', USER='C##cs329e_apb766', PASS='orcl_apb766', MODE='native_mode', MODEL='model', returnDimensions = 'False', returnFor = 'JSON'), verbose = TRUE), ))\n\nhead(df)\n\ndf2 <- df %>% select(., EVENT_TYPE, STATE, DAMAGE_CROPS, DAMAGE_PROPERTY, BEGIN_TIME, END_TIME) %>% filter(., DAMAGE_CROPS != 0 | DAMAGE_PROPERTY != 0) %>% filter(., DAMAGE_CROPS != \"null\" & DAMAGE_PROPERTY != \"null\") %>% mutate(., DAMAGE_KPI = (as.numeric(DAMAGE_CROPS) + as.numeric(DAMAGE_PROPERTY)) / (as.numeric(END_TIME) - as.numeric(BEGIN_TIME))) %>% filter(., DAMAGE_KPI > 80 & DAMAGE_KPI != Inf) %>% arrange(STATE) %>% distinct()\n\ndf3 <- df2 %>% group_by(., EVENT_TYPE, STATE) %>% mutate(KPI = cumsum(DAMAGE_KPI)) %>% mutate(MAX = max(KPI)) %>% select(EVENT_TYPE, STATE, MAX) %>% distinct() %>% filter(MAX < 27000)\n\nView(df3)\nhead(df2)\n\nggplot() + \n  coord_cartesian() + \n  scale_x_discrete() +\n  scale_y_discrete() +\n  scale_fill_gradient(low=\"pink\", high=\"red\") +\n  labs(title='Damage From Natural Disasters') +\n  labs(x=paste(\"Disaster\"), y=paste(\"State\")) +\n  layer(data=df3, \n        mapping=aes(x=EVENT_TYPE, y=STATE, fill = MAX), \n        stat=\"identity\", \n        stat_params=list(), \n        geom=\"tile\",\n        geom_params=list(), \n        position=position_identity()\n  )\n",
+    "created" : 1447296845636.000,
+    "dirty" : true,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2444894150",
+    "id" : "11D593EF",
+    "lastKnownWriteTime" : 1447303718,
+    "path" : "~/DataVisualization/DV_TProject1/01 Data/WorkflowA.R",
+    "project_path" : "01 Data/WorkflowA.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "type" : "r_source"
+}
