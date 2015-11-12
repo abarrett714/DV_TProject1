@@ -31,7 +31,7 @@ ggplot() +
   coord_cartesian() + 
   scale_x_discrete() +
   scale_y_discrete() +
-  scale_fill_gradient(low="white", high="red") +
+  scale_fill_gradient2(low="white", mid = "red", high= "darkred", midpoint = 7500) +
   labs(title='Damage From Natural Disasters') +
   labs(x=paste("Disaster"), y=paste("State")) +
   layer(data=df3, 
