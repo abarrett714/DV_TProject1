@@ -14,7 +14,7 @@ dfs1 <- select(dfs, BEGIN_YEARMONTH, DEATHS_DIRECT, DEATHS_INDIRECT, DAMAGE_PROP
   scale_y_continuous() +
   #facet_wrap(~BEGIN_DAY, ncol = 1) +
   labs(title='StormEvents Barchart\ndeaths_direct, avg(deaths_direct), ') +
-  labs(x=paste("Begin Yearmonth"), y=paste("Deaths Direct")) +
+  labs(x=paste("Begin Day"), y=paste("Deaths Direct")) +
   layer(data=dfs1, 
         mapping=aes(x=BEGIN_DAY, y=(DEATHS_DIRECT)), 
         stat="identity", 
