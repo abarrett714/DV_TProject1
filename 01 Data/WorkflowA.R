@@ -15,17 +15,17 @@ df <- data.frame(fromJSON(getURL(URLencode('skipper.cs.utexas.edu:5001/rest/nati
 
 RegDF <- data.frame(fromJSON(getURL(URLencode('skipper.cs.utexas.edu:5001/rest/native/?query="select * from STATEREGION"'),httpheader=c(DB='jdbc:oracle:thin:@sayonara.microlab.cs.utexas.edu:1521:orcl', USER='C##cs329e_apb766', PASS='orcl_apb766', MODE='native_mode', MODEL='model', returnDimensions = 'False', returnFor = 'JSON'), verbose = TRUE), ))
 
-head(df)
+#head(df)
 
 df2 <- df %>% select(., EVENT_TYPE, STATE, DAMAGE_CROPS, DAMAGE_PROPERTY, BEGIN_TIME, END_TIME) %>% mutate(DAMAGE_CROPS = strtoi(DAMAGE_CROPS), DAMAGE_PROPERTY = strtoi(DAMAGE_PROPERTY)) %>% filter(., DAMAGE_CROPS > 1 | DAMAGE_PROPERTY > 1) %>% filter(., DAMAGE_CROPS != "null" & DAMAGE_PROPERTY != "null") %>% mutate(., DAMAGE_KPI = (as.numeric(DAMAGE_CROPS) + as.numeric(DAMAGE_PROPERTY)) / (as.numeric(END_TIME) - as.numeric(BEGIN_TIME))) %>% filter(., DAMAGE_KPI > 80 & DAMAGE_KPI != Inf) %>% arrange(STATE) %>% distinct()
 
-View(df2)
+#View(df2)
 
 df3 <- df2 %>% group_by(., EVENT_TYPE, STATE) %>% mutate(KPI = cumsum(DAMAGE_KPI)) %>% mutate(MAX = max(KPI)) %>% select(EVENT_TYPE, STATE, MAX) %>% distinct()
 
-View(df3)
+#View(df3)
 df3 <- left_join(df3, RegDF, by = "STATE")
-head(df2)
+#head(df2)
 
 ggplot() + 
   coord_cartesian() + 
